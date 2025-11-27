@@ -24,7 +24,6 @@ reusable Python package.
 │   └── matcher.py
 ├── scripts/
 │   └── run_matching.py
-│   └── Product_Matching.ipynb  (optional, original notebook)
 ├── requirements.txt
 └── README.md
 ```
