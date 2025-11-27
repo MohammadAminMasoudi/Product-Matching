@@ -24,30 +24,10 @@ reusable Python package.
 │   └── matcher.py
 ├── scripts/
 │   └── run_matching.py
-├── data/
-│   └── (put your `test.xlsx` here – not committed)
-├── notebooks/
 │   └── Product_Matching.ipynb  (optional, original notebook)
 ├── requirements.txt
 └── README.md
 ```
-
-## Data format
-
-Place your Excel file in the `data/` directory, for example:
-
-* `data/test.xlsx`
-
-The file should contain **at least two sheets**, each sheet representing one
-company's catalog. Each sheet must have the following columns (names can be
-adjusted in `config.py`):
-
-* `Title` – product title
-* `Detail` – product description
-* `Category` – hierarchical category (e.g. `"Electronics > Mobile > Android"`)
-* `Price` – numeric or string price (e.g. `"120000"` or `"120,000 تومان"`)
-
-By default the script matches the **first two sheets** in the workbook.
 
 ## Installation
 
@@ -87,8 +67,3 @@ You can tweak thresholds and column names in [`product_matching/config.py`](prod
 * `COLUMNS` – mapping of logical names (`title`, `detail`, `category`, `price`)
   to the actual column names in your Excel sheets.
 
-## Repro from notebook
-
-If you want to keep the original Colab notebook, save it as
-`notebooks/Product_Matching.ipynb`. The Python modules in `product_matching/`
-implement the same logic but in a modular form suitable for reuse and testing.
